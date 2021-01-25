@@ -1,6 +1,6 @@
 # Simple-website-django
 
-git clone ''
+git clone 'https://github.com/RevathiShetty-101/Simple-website-django.git'
 
 create a screte key 
 $python manage.py shell
