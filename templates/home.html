@@ -1,0 +1,204 @@
+
+
+{% block content %}
+{% load static %}
+{% load i18n %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109064262-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-109064262-1');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio webpage">
+	<meta name="author" content="Chris Rosales">
+
+	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+	<link rel="shortcut icon" href="{% static 'Django-Personal-Website/images/favicon.ico' %}" />
+	<title>Digital Marketing World</title>
+
+	<!-- CSS -->
+	<link href="{% static 'Django-Personal-Website/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'Django-Personal-Website/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'Django-Personal-Website/css/animate.css" rel="stylesheet' %}">
+
+	<!-- Custom styles CSS -->
+	<link href="{% static 'Django-Personal-Website/css/style.css' %}" rel="stylesheet" media="screen">
+
+    <script src="{% static 'Django-Personal-Website/js/modernizr.custom.js' %}"></script>
+
+</head>
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+    <div class="home-overlay"></div>
+		<div class="intro">
+			<h1>Digital Marketing World</h1>
+		</div>
+
+		<a href="#services">
+			<div class="scroll-down">
+				<span>
+					<i class="fa fa-angle-down fa-2x"></i>
+				</span>
+			</div>
+		</a>
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Digital Stock</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+
+	<section id="services" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-8">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">ABOUT</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							<p>digital platforms became increasingly incorporated into marketing plans and everyday life, and as people increasingly use digital devices instead of visiting physical shops, digital marketing campaigns have become prevalent, employing combinations of search engine optimization (SEO), search engine marketing (SEM), content marketing, influencer marketing, content automation, campaign marketing, data-driven marketing, e-commerce marketing, social media marketing, social media optimization, e-mail direct marketing, display advertising, e–books, and optical disks and games have become commonplace. Digital marketing extends to non-Internet channels that provide digital media, such as television, mobile phones (SMS and MMS), callback, and on-hold mobile ring tones.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="pfblock-header wow fadeInUp">
+						<img id="myphoto" src="{% static 'Django-Personal-Website/images/Digital-Marketing.jpg' %}"  style="border-radius: 100%;filter:grayscale(30%);">
+					</div>
+				</div>
+		</div><!-- .container -->
+
+		<div class="pfblock-header wow fadeInUp">
+			<video width="1000" height="700" controls autoplay>
+			<source src="{% static 'Django-Personal-Website/sample.mp4' %} " type="video/mp4"></source>
+             </video>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services end -->
+
+
+	<!-- Portfolio start -->
+
+
+
+	<section id="contact" class="pfblock">
+		<div class="row">
+
+			<div class="col-sm-6 col-sm-offset-3">
+
+				<div class="pfblock-header">
+					<h2 class="pfblock-title">Contact</h2>
+					<div class="pfblock-line"></div>
+					<div class="start">
+						Send me an Email, I'll get back to you as soon as possible!
+					</div>
+				</div>
+
+		</div><!-- .row -->
+
+		<div class="row">
+
+			<div class="col-sm-6 col-sm-offset-3">
+				{% include 'contact_form.html' %}
+			</div><!-- .row -->
+
+		</div><!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="https://www.linkedin.com/in/chris-rosales-a2a2bb188/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/ChrisRosales" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-github"></i></a></li>
+						<li><a href="mailto:10rosachri@gmail.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="skype:live:c60d0b2622cc1a6?chat" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fa fa fa-skype"></i></a></li>
+					</ul>
+
+					<p class="copyright"></p>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+
+	<!-- Javascript files -->
+
+	<script src="{% static 'Django-Personal-Website/js/jquery-1.11.1.min.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/bootstrap/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/jquery.parallax-1.1.3.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/imagesloaded.pkgd.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/jquery.sticky.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/wow.min.js' %}"></script>
+  <script src="{% static 'Django-Personal-Website/js/waypoints.min.js' %}"></script>
+  <script src="{% static 'Django-Personal-Website/js/jquery.cbpQTRotator.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/custom.js' %}"></script>
+
+</body>
+</html>
+{% endblock  %}
