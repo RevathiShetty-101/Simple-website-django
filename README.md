@@ -14,7 +14,9 @@ get_random_secret_key()
 
 #run following commands
 
-$python manage.py migration
+python manage.py makemigrations
+
+$python manage.py migrate
 
 $python manage.py runserver
 
